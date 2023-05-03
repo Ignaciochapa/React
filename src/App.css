@@ -44,3 +44,27 @@
     object-fit: cover;
     background-size: cover;
 }
+
+.ItemDetailContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#root > div.ItemDetailContainer > div > div.contador > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 2rem;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import '../App.css';
 
@@ -23,8 +24,9 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="/index.html" id='linknavbar'>Inicio</Nav.Link>
-                <Nav.Link href="/index.html" id='linknavbar'>Contacto</Nav.Link>
+                <Link to={`/categoria/Buzos`}>Buzos</Link>
+                <Link to={`/categoria/Camperas`}>Camperas</Link>
+                <Link to={`/categoria/Remeras`}>Remeras</Link>
               </Nav>
               <CartWidget/>
             </Navbar.Collapse>
