@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/' element={<ItemListContainer titulo="Bienvenido a Kenzo Ind."/>}/>
         <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
         <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
       </Routes>

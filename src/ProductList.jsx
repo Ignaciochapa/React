@@ -62,7 +62,7 @@ export const getProducts = () => {
 export const getProductsId = (productoId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.map(prod => prod.id === productoId))
+            resolve(products.find(prod => prod.id === productoId))
         }, 200);
     })
 }
@@ -70,7 +70,7 @@ export const getProductsId = (productoId) => {
 export const getProductsCategory = (categoriaId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products.map(prod => prod.categoria === categoriaId))
+            resolve(products.find(prod => prod.categoria === categoriaId))
         }, 200);
     })
 }

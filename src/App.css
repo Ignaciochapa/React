@@ -1,6 +1,33 @@
 .titulo {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
+    padding-top: 0.8rem;
+}
+
+#root > nav > div > a {
+    display: flex;
+    justify-content: center;
+    padding-right: 20rem;
+    text-decoration: none;
+}
+
+#basic-navbar-nav > div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#basic-navbar-nav > div > a:nth-child(1) {
+    color: white;
+}
+
+#basic-navbar-nav > div > a:nth-child(2) {
+    color: white;
+}
+
+#basic-navbar-nav > div > a:nth-child(3) {
+    color: white;
 }
 
 .footer {
@@ -30,19 +57,6 @@
     color: white;
     margin-bottom: 0;
     padding-left: 8px;
-}
-
-.carousel {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-img {
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
-    background-size: cover;
 }
 
 .ItemDetailContainer {

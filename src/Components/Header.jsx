@@ -11,7 +11,7 @@ const Header = () => {
     <>
         <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="#home">
+            <Link to={`/`}>
             <img
               alt=""
               src="/images/background-buzo.jpg"
@@ -20,7 +20,7 @@ const Header = () => {
               className="d-inline-block align-top"
             />
             <p className="brand-titulo">Kenzo Ind.</p>
-            </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

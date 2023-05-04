@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import ItemCount from './ItemCount';
+//import Item from './Item';
 
 const ItemDetail = ({id, nombre, descripcion, imagen, material, talles, precio}) => {
   return (
@@ -9,7 +10,10 @@ const ItemDetail = ({id, nombre, descripcion, imagen, material, talles, precio})
       <Card.Body>
         <Card.Title>{nombre}</Card.Title>
         <Card.Text>
-            {id}
+            ID: {id}
+        </Card.Text>
+        <Card.Text>
+            Descripción: {descripcion}
         </Card.Text>
         <Card.Text>
             Material: {material}
