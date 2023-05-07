@@ -1,8 +1,12 @@
-.titulo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-    padding-top: 0.8rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+
+#root > div > nav {
+    background-color: blueviolet;
 }
 
 #root > nav > div > a {
@@ -18,18 +22,6 @@
     gap: 1rem;
 }
 
-#basic-navbar-nav > div > a:nth-child(1) {
-    color: white;
-}
-
-#basic-navbar-nav > div > a:nth-child(2) {
-    color: white;
-}
-
-#basic-navbar-nav > div > a:nth-child(3) {
-    color: white;
-}
-
 .footer {
     display: flex;
     justify-content: center;
@@ -41,28 +33,6 @@
 .navbar {
     background-color: blueviolet;
     color: white;
-}
-
-.navbar-brand {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-#linknavbar {
-    color: white;
-}
-
-.brand-titulo {
-    color: white;
-    margin-bottom: 0;
-    padding-left: 8px;
-}
-
-.ItemDetailContainer {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
 }
 
 .controles {
@@ -81,4 +51,139 @@
     justify-content: space-evenly;
     padding: 2rem;
     gap: 2rem;
+}
+
+#root > div > nav > div.container > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+#root > div > nav > div.container > a > img {
+    padding-right: 5px;
+    width: 2.5rem;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+
+#root > div > nav > div.me-auto.navbar-nav > a:hover {
+    color: rgba(255, 255, 255, 0.923);
+}
+
+#root > div > nav > div.me-auto.navbar-nav > a {
+    font-weight: 600;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#root > div > nav > div.me-auto.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 55rem;
+    margin: 0;
+}
+
+.container-brand {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 5rem;
+
+}
+
+#root > div > nav > div.container > a > div > p:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: oblique;
+    transform-style: flat;
+    border-color: black;
+}
+
+#root > div > nav > div.container > a > div > p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: oblique;
+    border-color: black;
+}
+
+#root > div > div > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    min-height: 720px;
+}
+
+#root > div > div > div > div > div > div.contador > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+}
+
+#root > div > div > div > h2 {
+    display: flex;
+    padding-bottom: 1.2rem;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.boton-vermas:hover {
+    color: blueviolet;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+
+.boton-vermas {
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: black;
+    font-weight: 600;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.button {
+    color: white;
+    background-color: blueviolet;
+    font-weight: 600;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+#root > div > div > div > div > div > div.contador > div:nth-child(2) > a {
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: black;
+    font-weight: 600;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+#root > div > div > div > div > div > div.contador > div.controles > p {
+    font-size: x-large;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+#root > div > div > div > div > div > div.card-body > div {
+    font-size: x-large;
+    font-weight: 600;
 }

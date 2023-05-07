@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
-const ItemCount = ({inicial, stock, onAdd}) => {
-    const [cantidad, setCantidad] = useState(inicial)
+const ItemCount = ({stock, onAdd}) => {
+    const [cantidad, setCantidad] = useState(1)
 
     const incremento = () => {
         if (cantidad < stock) {
@@ -18,12 +18,12 @@ const ItemCount = ({inicial, stock, onAdd}) => {
   return (
     <div className='contador'>
         <div className='controles'>
-        <Button className='button' onClick={decremento}>-</Button>
+        <button className='button' onClick={decremento}>-</button>
         <p className='number'>{cantidad}</p>
-        <Button className='button' onClick={incremento}>+</Button>
+        <button className='button' onClick={incremento}>+</button>
         </div>
         <div>
-            <Button onClick={() => onAdd(cantidad)} disabled={!stock}>Agregar al carrito</Button>
+            <Link onClick={() => onAdd(cantidad)}>Agregar al carrito</Link>
         </div>
     </div>
   )
