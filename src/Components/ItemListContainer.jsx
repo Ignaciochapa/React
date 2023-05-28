@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "../pedirDatos";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import { getProductos } from "../utils";
 
 const ItemListContainer = () => {
 
@@ -9,8 +9,10 @@ const ItemListContainer = () => {
     const categoria =  useParams().categoria
 
     useEffect(() => {
-        pedirDatos()
+        getProductos()
+        //pedirDatos()
             .then((res) => {
+                setProductos(res)
                 if (categoria) {
                     setProductos(res.filter((prod) => prod.categoria === categoria));
                 } else {

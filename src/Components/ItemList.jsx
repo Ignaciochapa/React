@@ -4,7 +4,7 @@ import Item from "./Item";
 const ItemList = ( {productos} ) => {
 
   return (
-    <div className="container">
+    <div className="container container-productos">
         <h2 className="main-title">Nuestro catálogo de productos</h2>
 
         <div className="productos">

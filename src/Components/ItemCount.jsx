@@ -1,29 +1,15 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
-const ItemCount = ({stock, onAdd}) => {
-    const [cantidad, setCantidad] = useState(1)
-
-    const incremento = () => {
-        if (cantidad < stock) {
-            setCantidad(cantidad + 1)
-        }
-    }
-
-    const decremento = () => {
-        if (cantidad > 1) {
-            setCantidad(cantidad - 1)
-        }
-    }
+const ItemCount = ({cantidad, sumar, restar, agregarAlCarrito}) => {
   return (
     <div className='contador'>
         <div className='controles'>
-        <button className='button' onClick={decremento}>-</button>
+        <button onClick={restar} className='button'>-</button>
         <p className='number'>{cantidad}</p>
-        <button className='button' onClick={incremento}>+</button>
+        <button onClick={sumar} className='button'>+</button>
         </div>
         <div>
-            <Link onClick={() => onAdd(cantidad)}>Agregar al carrito</Link>
+            <Link onClick={agregarAlCarrito}>Agregar al carrito</Link>
         </div>
     </div>
   )

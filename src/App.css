@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Euclid Circular A', sans-serif;                                         
     }
 
 #root > div > nav {
@@ -54,8 +54,7 @@
 }
 
 #root > div > nav > div.container > a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     display: flex;
     color: white;
     text-decoration: none;
@@ -65,7 +64,8 @@
     padding-right: 5px;
     width: 2.5rem;
     height: auto;
-    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 #root > div > nav > div.me-auto.navbar-nav > a:hover {
@@ -110,23 +110,21 @@
     border-color: black;
 }
 
-#root > div > div > div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    min-height: 720px;
-}
-
 #root > div > div > div > div > div > div.contador > div:nth-child(2) {
     display: flex;
     justify-content: center;
     padding-block: 1rem;
 }
 
-#root > div > div > div > h2 {
+.main-title {
     display: flex;
     padding-bottom: 1.2rem;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.main-title-cart {
+    display: flex;
     font-size: xx-large;
     font-weight: 700;
 }
@@ -149,10 +147,10 @@
     color: white;
     background-color: blueviolet;
     text-decoration: none;
-    border-width: 2px;
+    border-width: 1.6px;
     border-style: outset;
     border-color: black;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.4rem;
     border-radius: 0.4rem;
 }
@@ -160,7 +158,7 @@
 .button {
     color: white;
     background-color: blueviolet;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.4rem;
     border-radius: 0.4rem;
 }
@@ -169,10 +167,10 @@
     color: white;
     background-color: blueviolet;
     text-decoration: none;
-    border-width: 2px;
+    border-width: 1.6px;
     border-style: outset;
     border-color: black;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.4rem;
     border-radius: 0.4rem;
 }
@@ -186,4 +184,54 @@
 #root > div > div > div > div > div > div.card-body > div {
     font-size: x-large;
     font-weight: 600;
+}
+
+.boton-vermas2 {
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    border-width: 1.6px;
+    border-style: outset;
+    border-color: black;
+    font-weight: 500;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+}
+
+.boton-vermas2:hover {
+    color: blueviolet;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+#root > div > div > div > button {
+    background-color: blueviolet;
+}
+
+#root > div > nav > div.me-auto.navbar-nav > a:nth-child(5) {
+    font-weight: 800;
+    font-size: large;
+}
+
+.container-orders {
+    min-height: 720px;
+    display: grid;
+    place-items: center;
+}
+
+.container-cart {
+    min-height: 720px;
+    width: 500px;
+    padding-left: 8rem;
+    padding-block: 2.5rem;
+}
+
+.container-productos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    min-height: 720px;
 }
