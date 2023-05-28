@@ -127,6 +127,7 @@
     display: flex;
     font-size: xx-large;
     font-weight: 700;
+    margin-bottom: 3rem;
 }
 
 .productos {
@@ -158,18 +159,6 @@
 .button {
     color: white;
     background-color: blueviolet;
-    font-weight: 500;
-    padding: 0.4rem;
-    border-radius: 0.4rem;
-}
-
-#root > div > div > div > div > div > div.contador > div:nth-child(2) > a {
-    color: white;
-    background-color: blueviolet;
-    text-decoration: none;
-    border-width: 1.6px;
-    border-style: outset;
-    border-color: black;
     font-weight: 500;
     padding: 0.4rem;
     border-radius: 0.4rem;
@@ -222,7 +211,7 @@
 }
 
 .container-cart {
-    min-height: 720px;
+    min-height: 100vh;
     width: 500px;
     padding-left: 8rem;
     padding-block: 2.5rem;
@@ -233,5 +222,59 @@
     flex-direction: column;
     padding-bottom: 3rem;
     padding-top: 3rem;
-    min-height: 720px;
+    min-height: 100vh;
+}
+
+.container-detalle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    min-height: 100vh;
+}
+
+.container-checkout {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.label {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.input {
+    width: 250px;
+}
+
+.boton-vermas-checkout {
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    border-width: 1.6px;
+    border-style: outset;
+    border-color: black;
+    font-weight: 500;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+}
+
+.boton-vermas-checkout:hover {
+    color: blueviolet;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+.label-checkout {
+    display: grid;
+    place-items: center;
+}
+
+.cart-controls {
+    padding-top: 3rem;
 }

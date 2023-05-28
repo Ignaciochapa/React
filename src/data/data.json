@@ -53,5 +53,16 @@
       "imagen": "https://freres.ar/wp-content/uploads/2023/05/D892BBD1-3755-41E3-8E29-46269D1309CF-scaled.jpeg",
       "descripcion": "La mejor campera para ésta temporada",
       "stock": 20
+    },
+    {
+      "id": 6,
+      "titulo": "Campera Blue",
+      "categoria": "Camperas",
+      "material": "Algodón",
+      "talles": "S, M, L, XL",
+      "precio": 8000,
+      "imagen": "https://freres.ar/wp-content/uploads/2023/03/637A21CC-F2F9-4142-B16A-153BC80ECF97-scaled.jpeg",
+      "descripcion": "Una campera ideal para todos los dias",
+      "stock": 20
     }
   ]

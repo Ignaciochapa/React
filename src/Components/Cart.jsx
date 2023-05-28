@@ -36,9 +36,11 @@ const Cart = () => {
                     </ListGroup>
             })
         }
+        <div className='cart-controls'>
         <h2>Precio Total: ${precioTotal()}</h2>
         <button onClick={limpiarCarrito} className='boton-vermas'>Vaciar carrito</button>
         <Link className='boton-vermas2' to='/checkout'>Finalizar compra</Link>
+        </div>
     </div>
   )
 }

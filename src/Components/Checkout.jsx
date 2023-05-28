@@ -35,21 +35,24 @@ const Checkout = () => {
       }
 
   return (
-    <div className="container">
+    <div className="container-checkout">
         <form onSubmit={handleSubmit(sendOrder)} className="form">
             <label className="label">
                 Nombre
                 <input type="text" 
-                        className="input" {...register("nombre")}/>
+                        className="input"
+                        placeholder="Escriba su nombre completo" {...register("nombre")}/>
                 Phone
                 <input type="number"
-                        className="input" {...register("phone")}/>
+                        className="input"
+                        placeholder="Escriba su número de teléfono" {...register("phone")}/>
                 Email
                 <input type="email"
-                        className="input" {...register("email")}/>
+                        className="input"
+                        placeholder="Escriba su email" {...register("email")}/>
             </label>
-            <div className="label">
-                <button type="submit" className="boton-vermas">Crear Orden</button>
+            <div className="label-checkout">
+                <button type="submit" className="boton-vermas-checkout">Crear Orden</button>
             </div>
         </form>
     </div>

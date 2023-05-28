@@ -9,7 +9,7 @@ const ItemCount = ({cantidad, sumar, restar, agregarAlCarrito}) => {
         <button onClick={sumar} className='button'>+</button>
         </div>
         <div>
-            <Link onClick={agregarAlCarrito}>Agregar al carrito</Link>
+            <Link onClick={agregarAlCarrito} className="boton-vermas">Agregar al carrito</Link>
         </div>
     </div>
   )
