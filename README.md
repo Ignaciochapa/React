@@ -14,10 +14,10 @@ Ecommerce de indumentaria masculina
 
 * [React](https://es.react.dev/)
 * [React-bootstrap](https://react-bootstrap.github.io/)
-* [React-dom] 
-* [React-hook-form]
-* [React-router-dom]
-* [Firebase] (https://firebase.google.com/?hl=es-419)
+* [React-dom](https://es.react.dev/)
+* [React-hook-form](https://es.react.dev/)
+* [React-router-dom](https://es.react.dev/)
+* [Firebase](https://firebase.google.com/?hl=es-419)
 
 ## Versionado 📌
 
