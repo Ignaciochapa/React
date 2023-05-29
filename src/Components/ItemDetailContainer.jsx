@@ -20,7 +20,6 @@ const ItemDetailContainer = () => {
         const productAdapted = { id: response.id, ...data}
         setItem(productAdapted)
       })
-      .catch(error => {console.log(error)})
     }, [id])
 
   return (

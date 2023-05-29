@@ -1,6 +1,10 @@
 # Título del Proyecto
 
-Trabajo final de Curso React de CoderHouse
+Ecommerce de indumentaria masculina
+
+## Puede visualizar el proyecto ingresando al siguiente link
+
+* [Kenzo Ind.](https://es.react.dev/) - DEPLOY
 
 ## Autor ✒️
 
@@ -8,9 +12,13 @@ Trabajo final de Curso React de CoderHouse
 
 ## Construido con 🛠️
 
-* [React](https://es.react.dev/) - El framework web usado
-* [React Bootstrap](https://react-bootstrap.github.io/) - Libreria de maquetación
+* [React](https://es.react.dev/)
+* [React-bootstrap](https://react-bootstrap.github.io/)
+* [React-dom] 
+* [React-hook-form]
+* [React-router-dom]
+* [Firebase] (https://firebase.google.com/?hl=es-419)
 
 ## Versionado 📌
 
-Usamos [Git](https://git-scm.com) para el versionado.
+Utilicé [Git](https://git-scm.com) para el versionado.
