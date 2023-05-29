@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Checkout = () => {
 
     const { register, handleSubmit }= useForm();
-    const { carrito, precioTotal } = useContext(CartContext);
+    const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
     const [orderId, setOrderId] = useState('')
 
     const sendOrder = (data) => {
@@ -25,6 +25,7 @@ const Checkout = () => {
     }
 
       if (orderId) {
+        vaciarCarrito();
         return (
           <div className="container-orders">
             <h1 className="main-title">¡Muchas gracias por tu compra!</h1>

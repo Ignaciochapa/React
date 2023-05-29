@@ -2,9 +2,9 @@
 
 Ecommerce de indumentaria masculina
 
-## Puede visualizar el proyecto ingresando al siguiente link
+## Puede ver el proyecto en funcionamiento en el siguiente link ⬇️
 
-* [Kenzo Ind.](https://es.react.dev/) - DEPLOY
+* [Kenzo Ind.](https://drive.google.com/file/d/1gcuw9NGe4tSCFV9G3_3-7p6fKtzxSOW7/view?usp=sharing)
 
 ## Autor ✒️
 
